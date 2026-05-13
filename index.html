@@ -35,9 +35,27 @@
         </div>
 
         <div class="md:hidden">
-            <i class=" fa-solid fa-bars"></i>
+            <button id="toggle" >☰</button>
         </div>
     </header>
+
+    <!-- Side navbar  -->
+    <section class="w-100 bg-gray-600 p-10 inset-0 fixed -left-150 transition-all duration-300" id="sidebar">
+        <div class="flex items-center justify-between">
+            <h1 class=" text-2xl text-white ">Sidebar</h1>
+           <p class="text-2xl text-white" id="retoggle">☰</p>
+        </div>
+
+        <ul class="space-y-4 mt-10">
+                <li class="text-gray-400 text-xl"><a href="#">About</a> </li>
+                <li class="text-gray-400 text-xl"><a href="#">Projects</a> </li>
+                <li class="text-gray-400 text-xl"><a href="#">Skills</a> </li>
+                <li class="text-gray-400 text-xl"><a href="#">Contact</a> </li>
+            </ul>
+
+
+
+    </section>
 
     <!-- Main Section  -->
     <main>
@@ -134,7 +152,27 @@
     <footer class="text-center bg-gray-800 mx-20 mt-10 p-5 mb-20 ">
         <h1 class="text-white">@025 text decoration here to change something</h1>
     </footer>
+<script>
+   
+  const icon = document.getElementById("toggle");
+const sbar = document.getElementById("sidebar");
 
+icon.addEventListener("click", () => {
+  
+    sbar.classList.remove("-left-1/2");
+    sbar.classList.add("left-0");
+  
+  
+});
+
+
+const sbartoggle = document.getElementById("retoggle");
+
+sbartoggle.addEventListener("click", () =>{
+     sbar.classList.remove("left-0");
+    sbar.classList.add("-left-1/2");
+})
+</script>
 
 </body>
 
