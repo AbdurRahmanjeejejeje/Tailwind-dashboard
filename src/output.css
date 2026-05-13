@@ -31,6 +31,8 @@
     --spacing: 0.25rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
+    --container-3xl: 48rem;
+    --container-4xl: 56rem;
     --container-5xl: 64rem;
     --container-6xl: 72rem;
     --container-7xl: 80rem;
@@ -316,6 +318,9 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
@@ -339,6 +344,12 @@
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
+  }
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
   }
   .max-w-5xl {
     max-width: var(--container-5xl);
@@ -394,17 +405,29 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-15 {
+    gap: calc(var(--spacing) * 15);
+  }
   .gap-19 {
     gap: calc(var(--spacing) * 19);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
+  }
+  .gap-55 {
+    gap: calc(var(--spacing) * 55);
+  }
+  .gap-80 {
+    gap: calc(var(--spacing) * 80);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -454,6 +477,9 @@
       margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -790,6 +816,16 @@
   .md\:justify-around {
     @media (width >= 48rem) {
       justify-content: space-around;
+    }
+  }
+  .md\:gap-80 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 80);
+    }
+  }
+  .md\:overflow-auto {
+    @media (width >= 48rem) {
+      overflow: auto;
     }
   }
   .md\:px-10 {
