@@ -210,8 +210,14 @@
   .fixed {
     position: fixed;
   }
+  .sticky {
+    position: sticky;
+  }
   .inset-0 {
     inset: calc(var(--spacing) * 0);
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
   }
   .-left-1 {
     left: calc(var(--spacing) * -1);
@@ -264,6 +270,9 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mr-5 {
+    margin-right: calc(var(--spacing) * 5);
+  }
   .mr-20 {
     margin-right: calc(var(--spacing) * 20);
   }
@@ -275,6 +284,9 @@
   }
   .mb-23 {
     margin-bottom: calc(var(--spacing) * 23);
+  }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
   }
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
@@ -688,6 +700,9 @@
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
+  }
+  .pb-1 {
+    padding-bottom: calc(var(--spacing) * 1);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
